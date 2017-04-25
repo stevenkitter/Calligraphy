@@ -24,84 +24,85 @@
     TabBarController *tabBarVc = [[TabBarController alloc] init];
     
     // 设置窗口的根控制器
-   
-   
+    
+    
     
     self.window.rootViewController = tabBarVc;
     
     [self.window makeKeyAndVisible];
     
-//    BaiduMobAdSplash *splash = [[BaiduMobAdSplash alloc] init];
-//    splash.delegate = self;
-//    //把在mssp.baidu.com上创建后获得的代码位id写到这里
-//    splash.AdUnitTag = @"2377848";
-//    splash.canSplashClick = YES;
-//    self.splash = splash;
-//    
-//    //可以在customSplashView上显示包含icon的自定义开屏
-//    self.customSplashView = [[UIImageView alloc]initWithFrame:self.window.frame];
-//    _customSplashView.userInteractionEnabled = YES;
-//    [self.customSplashView setImage:[UIImage imageNamed:@"default"]];
-//    
-//    [self.window addSubview:self.customSplashView];
-//
-//    [splash loadAndDisplayUsingContainerView:self.customSplashView];
+    BaiduMobAdSplash *splash = [[BaiduMobAdSplash alloc] init];
+    splash.delegate = self;
+    //把在mssp.baidu.com上创建后获得的代码位id写到这里
+    splash.AdUnitTag = @"2377848";
+    splash.canSplashClick = YES;
+    self.splash = splash;
+    
+    //可以在customSplashView上显示包含icon的自定义开屏
+    self.customSplashView = [[UIImageView alloc]initWithFrame:self.window.frame];
+    _customSplashView.userInteractionEnabled = YES;
+    [self.customSplashView setImage:[UIImage imageNamed:@"luanch.png"]];
+    
+    [self.window addSubview:self.customSplashView];
+    
+    [splash loadAndDisplayUsingContainerView:self.customSplashView];
     
     //[self.customSplashView setHidden:YES];
     
     return YES;
 }
 
-//-(void)timerFireMethod:(NSTimer*)timer
-//{
-//    _secondCount--;
-//    [self.label setText:[NSString stringWithFormat:@"%ld",(long)_secondCount]];
-//}
+-(void)timerFireMethod:(NSTimer*)timer
+{
+    _secondCount--;
+    [self.label setText:[NSString stringWithFormat:@"%ld",(long)_secondCount]];
+}
 
-//- (NSString *)publisherId{
-//    return @"ad761935"; //your_own_app_id
-//}
+- (NSString *)publisherId{
+    return @"ad761935"; //your_own_app_id
+}
 
-//-(void)splashSuccessPresentScreen:(BaiduMobAdSplash *)splash
-//{
-//    
-//    
-//    CGFloat labelW = 33;
-//    CGFloat labelH = 33;
-//    CGFloat margin = 20;
-//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CLScreenW-margin-labelW, margin, labelW, labelH)];
-//    self.label = label;
-//    label.text = @"5";
-//    label.textAlignment = NSTextAlignmentCenter;
-//    label.backgroundColor = [UIColor grayColor];
-//    _secondCount = 5;
-//    label.textColor = [UIColor whiteColor];
-//    [self.customSplashView addSubview:label];
-//    
-//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
-//    self.timer = timer;
-//
-//}
+-(void)splashSuccessPresentScreen:(BaiduMobAdSplash *)splash
+{
+    
+    
+    CGFloat labelW = 33;
+    CGFloat labelH = 33;
+    CGFloat margin = 20;
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CLScreenW-margin-labelW, margin, labelW, labelH)];
+    self.label = label;
+    label.text = @"5";
+    label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor grayColor];
+    _secondCount = 5;
+    label.textColor = [UIColor whiteColor];
+    [self.customSplashView addSubview:label];
+    [self.customSplashView bringSubviewToFront:label];
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
+    self.timer = timer;
+    
+}
 
 /**
  *  广告展示失败
  */
-//- (void)splashlFailPresentScreen:(BaiduMobAdSplash *)splash withError:(BaiduMobFailReason) reason
-//{
-//   
-//    //自定义开屏移除
-//    [self.customSplashView removeFromSuperview];
-//}
+- (void)splashlFailPresentScreen:(BaiduMobAdSplash *)splash withError:(BaiduMobFailReason) reason
+{
+    
+    //自定义开屏移除
+    [self.customSplashView removeFromSuperview];
+}
 
 /**
  *  广告展示结束
  */
-//- (void)splashDidDismissScreen:(BaiduMobAdSplash *)splash
-//{
-//   
-//    //自定义开屏移除
-//    [self.customSplashView removeFromSuperview];
-//}
+- (void)splashDidDismissScreen:(BaiduMobAdSplash *)splash
+{
+    
+    //自定义开屏移除
+    [self.customSplashView removeFromSuperview];
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

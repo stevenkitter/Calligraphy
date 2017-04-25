@@ -7,17 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate/*,BaiduMobAdSplashDelegate*/>
+#import "BaiduMobAdSDK/BaiduMobAdSplash.h"
+#import "BaiduMobAdSDK/BaiduMobAdSetting.h"
+@interface AppDelegate : UIResponder <UIApplicationDelegate,BaiduMobAdSplashDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-//
-//@property (strong, nonatomic) UIImageView *customSplashView;
-//
-//@property (strong, nonatomic) BaiduMobAdSplash *splash;
-//
-//@property (retain ,nonatomic)  NSTimer *timer;
-//
-//@property (retain ,nonatomic)  UILabel *label;
+
+@property (strong, nonatomic) UIImageView *customSplashView;
+
+@property (strong, nonatomic) BaiduMobAdSplash *splash;
+
+@property (retain ,nonatomic)  NSTimer *timer;
+
+@property (retain ,nonatomic)  UILabel *label;
 @end
 
