@@ -31,6 +31,8 @@ static NSInteger pageSize = 10;
 @property (assign ,nonatomic)  BOOL isAllDataFinished;
 
 @property (strong ,nonatomic)  BaiduMobAdView *sharedAdView;
+
+@property (strong ,nonatomic)  UIView *superView;
 @end
 
 @implementation SearchResultController
@@ -118,6 +120,7 @@ static NSInteger pageSize = 10;
 {
     UIView *superView = [UIView new];
     superView.frame = CGRectMake(0, 0, CLScreenW, 250+CLScreenW*0.15);
+    _superView = superView;
     
     FunctionView *funcView = [[FunctionView alloc] initWithFrame:CGRectMake(0, CLScreenW*0.15, CLScreenW, 250)];
     
@@ -141,6 +144,22 @@ static NSInteger pageSize = 10;
     
     self.tableView.tableHeaderView = superView;
 }
+
+
+- (void)failedDisplayAd:(BaiduMobFailReason)reason{
+    [_sharedAdView removeFromSuperview];
+    _superView.frame = CGRectMake(0, 0, CLScreenW, 250);
+    _funcView.frame = CGRectMake(0, 0, CLScreenW, 250);
+    [self.tableView reloadData];
+}
+
+- (void)didAdImpressed{
+    [_superView addSubview:_sharedAdView];
+    _superView.frame = CGRectMake(0, 0, CLScreenW, 250+CLScreenW*0.15);
+    _funcView.frame = CGRectMake(0, CLScreenW*0.15, CLScreenW, 250);
+    [self.tableView reloadData];
+}
+
 
 -(void)loadDataFromServer:(NSNumber *)pageIndex
 {
