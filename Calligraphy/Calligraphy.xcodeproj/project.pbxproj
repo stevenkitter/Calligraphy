@@ -20,6 +20,10 @@
 		181D37CA1C26EABE00C110E3 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D37C51C26EABE00C110E3 /* UIBarButtonItem+Item.m */; };
 		181D37CB1C26EABE00C110E3 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D37C71C26EABE00C110E3 /* UIImage+Image.m */; };
 		181D37CC1C26EABE00C110E3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D37C91C26EABE00C110E3 /* UIView+Frame.m */; };
+		1853EECF1EDF98A80086391D /* CollectFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853EECE1EDF98A80086391D /* CollectFlowLayout.m */; };
+		1853EED21EDFE35B0086391D /* CollectWordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853EED11EDFE35B0086391D /* CollectWordModel.m */; };
+		18C49C221EDECB3C009DB680 /* CollectWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C49C201EDECB3C009DB680 /* CollectWordsViewController.m */; };
+		18C49C231EDECB3C009DB680 /* CollectWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C49C211EDECB3C009DB680 /* CollectWordsViewController.xib */; };
 		9711277A1C2D104700889655 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971127791C2D104700889655 /* WebViewController.m */; };
 		9767F3AD1C2B8B2700AB6874 /* EssentialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767F3AC1C2B8B2700AB6874 /* EssentialController.m */; };
 		9767F3B01C2B8B5800AB6874 /* CuttingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767F3AF1C2B8B5800AB6874 /* CuttingController.m */; };
@@ -103,6 +107,13 @@
 		181D37C71C26EABE00C110E3 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		181D37C81C26EABE00C110E3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		181D37C91C26EABE00C110E3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		1853EECD1EDF98A80086391D /* CollectFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectFlowLayout.h; sourceTree = "<group>"; };
+		1853EECE1EDF98A80086391D /* CollectFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectFlowLayout.m; sourceTree = "<group>"; };
+		1853EED01EDFE35B0086391D /* CollectWordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectWordModel.h; sourceTree = "<group>"; };
+		1853EED11EDFE35B0086391D /* CollectWordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectWordModel.m; sourceTree = "<group>"; };
+		18C49C1F1EDECB3C009DB680 /* CollectWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectWordsViewController.h; sourceTree = "<group>"; };
+		18C49C201EDECB3C009DB680 /* CollectWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectWordsViewController.m; sourceTree = "<group>"; };
+		18C49C211EDECB3C009DB680 /* CollectWordsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectWordsViewController.xib; sourceTree = "<group>"; };
 		20C6FF5AA291C0E3E7DC971A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		971127781C2D104700889655 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		971127791C2D104700889655 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
@@ -275,6 +286,7 @@
 				9767F3B11C2B8E5600AB6874 /* Community */,
 				9767F39E1C2B870400AB6874 /* Cutting */,
 				97EBFDBA1C2A28430074FE59 /* Tools */,
+				18C49C1B1EDECAFF009DB680 /* CollectWords */,
 				9767F3901C2B7FEC00AB6874 /* Essential */,
 				97EBFD8F1C279BB40074FE59 /* Dictionary */,
 				181D37C31C26EABE00C110E3 /* Category */,
@@ -353,6 +365,44 @@
 				97EBFDC11C2A37810074FE59 /* NullSafe.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		18C49C1B1EDECAFF009DB680 /* CollectWords */ = {
+			isa = PBXGroup;
+			children = (
+				18C49C1C1EDECB1D009DB680 /* Controller */,
+				18C49C1D1EDECB1D009DB680 /* Model */,
+				18C49C1E1EDECB1D009DB680 /* View */,
+			);
+			path = CollectWords;
+			sourceTree = "<group>";
+		};
+		18C49C1C1EDECB1D009DB680 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18C49C1F1EDECB3C009DB680 /* CollectWordsViewController.h */,
+				18C49C201EDECB3C009DB680 /* CollectWordsViewController.m */,
+				18C49C211EDECB3C009DB680 /* CollectWordsViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18C49C1D1EDECB1D009DB680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1853EECD1EDF98A80086391D /* CollectFlowLayout.h */,
+				1853EECE1EDF98A80086391D /* CollectFlowLayout.m */,
+				1853EED01EDFE35B0086391D /* CollectWordModel.h */,
+				1853EED11EDFE35B0086391D /* CollectWordModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C49C1E1EDECB1D009DB680 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5A301B033CCE908C61E9F59C /* Frameworks */ = {
@@ -647,6 +697,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181D37921C26E7B400C110E3 /* LaunchScreen.xib in Resources */,
+				18C49C231EDECB3C009DB680 /* CollectWordsViewController.xib in Resources */,
 				181D378F1C26E7B400C110E3 /* Images.xcassets in Resources */,
 				97EBFDB61C2948FD0074FE59 /* SearchResultCell.xib in Resources */,
 				EC6D3F981EAF42F8009E403E /* baidumobadsdk.bundle in Resources */,
@@ -717,6 +768,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1853EED21EDFE35B0086391D /* CollectWordModel.m in Sources */,
 				97EBFD951C279C070074FE59 /* DictionaryController.m in Sources */,
 				181D37AD1C26E89F00C110E3 /* AppDelegate.m in Sources */,
 				97EBFDCF1C2A93080074FE59 /* PreimageView.m in Sources */,
@@ -725,11 +777,13 @@
 				181D37CA1C26EABE00C110E3 /* UIBarButtonItem+Item.m in Sources */,
 				9767F3B71C2B8E5600AB6874 /* CommunityController.m in Sources */,
 				9767F3B01C2B8B5800AB6874 /* CuttingController.m in Sources */,
+				18C49C221EDECB3C009DB680 /* CollectWordsViewController.m in Sources */,
 				97EBFDC21C2A37810074FE59 /* NullSafe.m in Sources */,
 				97EBFDC01C2A2F2F0074FE59 /* NSURL+Wx_defined.m in Sources */,
 				9767F3AD1C2B8B2700AB6874 /* EssentialController.m in Sources */,
 				181D37B81C26E9BC00C110E3 /* NavigationController.m in Sources */,
 				97EBFDAE1C2942760074FE59 /* SearchResultController.m in Sources */,
+				1853EECF1EDF98A80086391D /* CollectFlowLayout.m in Sources */,
 				97EBFD9C1C27E1120074FE59 /* FunctionView.m in Sources */,
 				181D37B91C26E9BC00C110E3 /* TabBarController.m in Sources */,
 				181D37AF1C26E89F00C110E3 /* main.m in Sources */,

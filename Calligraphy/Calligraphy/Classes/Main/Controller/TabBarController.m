@@ -14,6 +14,7 @@
 #import "EssentialController.h"
 #import "CuttingController.h"
 #import "CommunityController.h"
+#import "CollectWordsViewController.h"
 @interface TabBarController ()<TabBarViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *items;
@@ -73,7 +74,7 @@
     //888888  f58717
     // 词典
     DictionaryController *home = [[DictionaryController alloc] init];
-    
+    home.view.backgroundColor = [UIColor whiteColor];
     [self setUpOneChildViewController:home image:[UIImage imageNamed:@"dictionary"] selectedImage:[UIImage imageWithOriginalName:@"dictionary_selected"] title:@"辞典"];
     
     
@@ -84,9 +85,10 @@
     
     
     // 篆刻
-    CuttingController *cutting = [[CuttingController alloc] init];
-    [self setUpOneChildViewController:cutting image:[UIImage imageNamed:@"cutting"] selectedImage:[UIImage imageWithOriginalName:@"cutting_selected"] title:@"篆刻"];
-    
+//    CuttingController *cutting = [[CuttingController alloc] init];
+//    [self setUpOneChildViewController:cutting image:[UIImage imageNamed:@"cutting"] selectedImage:[UIImage imageWithOriginalName:@"cutting_selected"] title:@"篆刻"];
+    CollectWordsViewController *collectWordsViewController = [CollectWordsViewController new];
+    [self setUpOneChildViewController:collectWordsViewController image:[UIImage imageWithOriginalName:@"cutting"] selectedImage:[UIImage imageWithOriginalName:@"cutting_selected"] title:@"集字"];
     
     
     // 社区
@@ -108,7 +110,7 @@
     vc.title = title;
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selectedImage;
-    vc.view.backgroundColor = [UIColor whiteColor];
+ 
     // 保存tabBarItem模型到数组
     [self.items addObject:vc.tabBarItem];
     

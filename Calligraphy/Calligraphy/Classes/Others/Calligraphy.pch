@@ -11,7 +11,7 @@
 
 #import "UIView+Frame.h"
 #import "UIImage+Image.h"
-
+#import "CLHttpTool.h"
 #define CLKeyWindow [UIApplication sharedApplication].keyWindow
 
 // ...表示宏定义的可变参数
