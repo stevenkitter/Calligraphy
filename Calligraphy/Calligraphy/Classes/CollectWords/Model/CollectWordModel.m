@@ -12,7 +12,7 @@
 -(instancetype)initWithWord:(NSString*)word imgUrl:(NSString*)imgUrl{
     if (self = [self init]) {
         self.word = word;
-        self.imgUrl = imgUrl;
+        self.img = imgUrl;
     }
     return self;
 }

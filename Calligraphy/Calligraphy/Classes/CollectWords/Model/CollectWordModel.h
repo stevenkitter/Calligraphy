@@ -10,7 +10,7 @@
 
 @interface CollectWordModel : NSObject
 @property (nonatomic,copy) NSString *word;
-@property (nonatomic,copy) NSString *imgUrl;
+@property (nonatomic,copy) NSString *img;
 
 -(instancetype)initWithWord:(NSString*)word imgUrl:(NSString*)imgUrl;
 @end

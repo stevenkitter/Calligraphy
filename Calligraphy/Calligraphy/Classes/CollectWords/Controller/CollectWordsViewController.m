@@ -9,13 +9,16 @@
 #import "CollectWordsViewController.h"
 #import "MBProgressHUD.h"
 #import "CollectWordModel.h"
+#import "ImageCollectionViewCell.h"
+#import "UIImageView+WebCache.h"
+#import "CollectFlowLayout.h"
 #define httpUrlImages @"http://www.shibeixuan.com/xzqy3/jzgj_mo.php?fenlei="
-@interface CollectWordsViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface CollectWordsViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,CollectFlowLayoutDlegate>
 @property (weak, nonatomic) IBOutlet UIButton *selectWordTypeButton;
 @property (weak, nonatomic) IBOutlet UIButton *getPicturesButton;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet UICollectionViewLayout *layout;
+@property (weak, nonatomic) IBOutlet CollectFlowLayout *layout;
 @property (weak, nonatomic) IBOutlet UILabel *noticeLabel;
 //[[url],[url],[url]]
 @property (strong,nonatomic) NSMutableArray *images;
@@ -26,8 +29,10 @@
 
 @implementation CollectWordsViewController
 - (IBAction)btnClicked:(UIButton *)sender {
+    [self.view endEditing:YES];
     if (sender.tag == 0) {
         //字体
+     
         [self selectType];
         return;
     }else{
@@ -55,7 +60,8 @@
     _type = 1;
     [super viewDidLoad];
     _noticeLabel.hidden = YES;
-    
+    [_collectionView registerNib:[UINib nibWithNibName:@"ImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"ImageCollectionViewCell"];
+    _layout.delegate = self;
     // Do any additional setup after loading the view from its nib.
 }
 -(void)getImages {
@@ -65,9 +71,19 @@
     NSDictionary *parameters = @{@"words":json};
     [CLHttpTool post:urlStr parameters:parameters success:^(id responseObject) {
         [self.images removeAllObjects];
-        [self.images addObjectsFromArray:(NSArray*)responseObject];
-        [self initImageItems];
+        NSArray *models = (NSArray*)responseObject;
         
+        for(NSArray *imgDicts in models){
+            NSMutableArray *imgs = [NSMutableArray array];
+            for(NSDictionary *dict in imgDicts){
+                [imgs addObject:dict[@"img"]];
+            }
+            [self.images addObject:imgs];
+        }
+        
+      
+        [self initImageItems];
+        [self.collectionView reloadData];
     } failure:^(NSError *error) {
         
     }];
@@ -83,11 +99,15 @@
         }
     }
     NSMutableArray *itemImages = [NSMutableArray array];
+    
     for (NSInteger j = 0; j < maxCount; j++) {
         for (NSInteger k = 0; k < self.images.count; k++) {
             NSArray *items = self.images[k];
             if (items.count > j) {
                 CollectWordModel *model = [[CollectWordModel alloc] initWithWord:@"" imgUrl:items[j]];
+                [itemImages addObject:model];
+            }else{
+                CollectWordModel *model = [[CollectWordModel alloc] initWithWord:@"" imgUrl:@""];
                 [itemImages addObject:model];
             }
         }
@@ -164,7 +184,7 @@
     for (int i=0; i<[string length]; i++)
     {
         int a = [string characterAtIndex:i];
-        if (a < 0x9fff && a > 0x4e00)
+        if (a <= 0x9FA5 && a >= 0x4e00)
         {
             [arr addObject:[string substringWithRange:NSMakeRange(i, 1)]];
         }
@@ -191,8 +211,16 @@
     return self.imageItems.count;
 }
 
-
-
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    ImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ImageCollectionViewCell" forIndexPath:indexPath];
+    CollectWordModel *model = self.imageItems[indexPath.item];
+    [cell.contentImageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.shibeixuan.com/%@",model.img]] placeholderImage:nil];
+//    cell.label.text = [NSString stringWithFormat:@"http://www.shibeixuan.com/%@",model.img];
+    return cell;
+}
+-(CGFloat)columnCount:(CollectFlowLayout *)layout{
+    return self.images.count;
+}
 
 
 #pragma mark init

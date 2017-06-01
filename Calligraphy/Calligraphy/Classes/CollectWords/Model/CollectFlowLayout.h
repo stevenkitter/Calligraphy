@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CollectFlowLayout;
 @protocol CollectFlowLayoutDlegate <NSObject>
 
-
+-(CGFloat)columnCount:(CollectFlowLayout*)layout;
 @end
 
 @interface CollectFlowLayout : UICollectionViewLayout
