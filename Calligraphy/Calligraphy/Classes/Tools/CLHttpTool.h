@@ -19,5 +19,8 @@
      success:(void (^)(id responseObject))success
      failure:(void (^)(NSError *error))failure;
 
-
++ (void)postNoJson:(NSString *)URLString
+        parameters:(id)parameters
+           success:(void (^)(id responseObject))success
+           failure:(void (^)(NSError *error))failure;
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181A4A3D1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A4A3B1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.m */; };
+		181A4A3E1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181A4A3C1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.xib */; };
 		181D378F1C26E7B400C110E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D378E1C26E7B400C110E3 /* Images.xcassets */; };
 		181D37921C26E7B400C110E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181D37901C26E7B400C110E3 /* LaunchScreen.xib */; };
 		181D379E1C26E7B400C110E3 /* CalligraphyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D379D1C26E7B400C110E3 /* CalligraphyTests.m */; };
@@ -20,6 +22,9 @@
 		181D37CA1C26EABE00C110E3 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D37C51C26EABE00C110E3 /* UIBarButtonItem+Item.m */; };
 		181D37CB1C26EABE00C110E3 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D37C71C26EABE00C110E3 /* UIImage+Image.m */; };
 		181D37CC1C26EABE00C110E3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D37C91C26EABE00C110E3 /* UIView+Frame.m */; };
+		182BD9621EE103CD00E30FB1 /* SelectImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BD9611EE103CD00E30FB1 /* SelectImageView.m */; };
+		182BD9641EE103DF00E30FB1 /* SelectImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182BD9631EE103DF00E30FB1 /* SelectImageView.xib */; };
+		182BD9671EE1340E00E30FB1 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BD9661EE1340E00E30FB1 /* UITextView+Placeholder.m */; };
 		1853EECF1EDF98A80086391D /* CollectFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853EECE1EDF98A80086391D /* CollectFlowLayout.m */; };
 		1853EED21EDFE35B0086391D /* CollectWordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853EED11EDFE35B0086391D /* CollectWordModel.m */; };
 		1853EED61EE0021D0086391D /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853EED41EE0021D0086391D /* ImageCollectionViewCell.m */; };
@@ -83,6 +88,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181A4A3A1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLabelCollectionViewCell.h; sourceTree = "<group>"; };
+		181A4A3B1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLabelCollectionViewCell.m; sourceTree = "<group>"; };
+		181A4A3C1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageLabelCollectionViewCell.xib; sourceTree = "<group>"; };
 		181D377E1C26E7B400C110E3 /* Calligraphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calligraphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D378E1C26E7B400C110E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		181D37911C26E7B400C110E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -109,6 +117,11 @@
 		181D37C71C26EABE00C110E3 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		181D37C81C26EABE00C110E3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		181D37C91C26EABE00C110E3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		182BD9601EE103CD00E30FB1 /* SelectImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectImageView.h; sourceTree = "<group>"; };
+		182BD9611EE103CD00E30FB1 /* SelectImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectImageView.m; sourceTree = "<group>"; };
+		182BD9631EE103DF00E30FB1 /* SelectImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectImageView.xib; sourceTree = "<group>"; };
+		182BD9651EE1340E00E30FB1 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		182BD9661EE1340E00E30FB1 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		1853EECD1EDF98A80086391D /* CollectFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectFlowLayout.h; sourceTree = "<group>"; };
 		1853EECE1EDF98A80086391D /* CollectFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectFlowLayout.m; sourceTree = "<group>"; };
 		1853EED01EDFE35B0086391D /* CollectWordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectWordModel.h; sourceTree = "<group>"; };
@@ -357,6 +370,8 @@
 		181D37C31C26EABE00C110E3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				182BD9651EE1340E00E30FB1 /* UITextView+Placeholder.h */,
+				182BD9661EE1340E00E30FB1 /* UITextView+Placeholder.m */,
 				181D37C41C26EABE00C110E3 /* UIBarButtonItem+Item.h */,
 				181D37C51C26EABE00C110E3 /* UIBarButtonItem+Item.m */,
 				181D37C61C26EABE00C110E3 /* UIImage+Image.h */,
@@ -409,6 +424,12 @@
 				1853EED31EE0021D0086391D /* ImageCollectionViewCell.h */,
 				1853EED41EE0021D0086391D /* ImageCollectionViewCell.m */,
 				1853EED51EE0021D0086391D /* ImageCollectionViewCell.xib */,
+				182BD9601EE103CD00E30FB1 /* SelectImageView.h */,
+				182BD9611EE103CD00E30FB1 /* SelectImageView.m */,
+				182BD9631EE103DF00E30FB1 /* SelectImageView.xib */,
+				181A4A3A1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.h */,
+				181A4A3B1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.m */,
+				181A4A3C1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -704,11 +725,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181A4A3E1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.xib in Resources */,
 				181D37921C26E7B400C110E3 /* LaunchScreen.xib in Resources */,
 				18C49C231EDECB3C009DB680 /* CollectWordsViewController.xib in Resources */,
 				181D378F1C26E7B400C110E3 /* Images.xcassets in Resources */,
 				97EBFDB61C2948FD0074FE59 /* SearchResultCell.xib in Resources */,
 				EC6D3F981EAF42F8009E403E /* baidumobadsdk.bundle in Resources */,
+				182BD9641EE103DF00E30FB1 /* SelectImageView.xib in Resources */,
 				EC6D3FA31EAF455E009E403E /* luanch.png in Resources */,
 				1853EED71EE0021D0086391D /* ImageCollectionViewCell.xib in Resources */,
 				97DFE1EB1C730F060026EE85 /* Default-568h@2x.png in Resources */,
@@ -780,6 +803,7 @@
 				1853EED21EDFE35B0086391D /* CollectWordModel.m in Sources */,
 				97EBFD951C279C070074FE59 /* DictionaryController.m in Sources */,
 				181D37AD1C26E89F00C110E3 /* AppDelegate.m in Sources */,
+				182BD9621EE103CD00E30FB1 /* SelectImageView.m in Sources */,
 				97EBFDCF1C2A93080074FE59 /* PreimageView.m in Sources */,
 				181D37CB1C26EABE00C110E3 /* UIImage+Image.m in Sources */,
 				97EBFDB91C294DDF0074FE59 /* DictionaryModel.m in Sources */,
@@ -788,7 +812,9 @@
 				9767F3B01C2B8B5800AB6874 /* CuttingController.m in Sources */,
 				18C49C221EDECB3C009DB680 /* CollectWordsViewController.m in Sources */,
 				97EBFDC21C2A37810074FE59 /* NullSafe.m in Sources */,
+				181A4A3D1EE2C41F0060AC42 /* ImageLabelCollectionViewCell.m in Sources */,
 				97EBFDC01C2A2F2F0074FE59 /* NSURL+Wx_defined.m in Sources */,
+				182BD9671EE1340E00E30FB1 /* UITextView+Placeholder.m in Sources */,
 				9767F3AD1C2B8B2700AB6874 /* EssentialController.m in Sources */,
 				181D37B81C26E9BC00C110E3 /* NavigationController.m in Sources */,
 				97EBFDAE1C2942760074FE59 /* SearchResultController.m in Sources */,

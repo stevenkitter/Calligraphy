@@ -76,7 +76,10 @@ static const UIEdgeInsets EdgeInsets = {0,0,0,0};
     CGFloat y = self.edgeInsets.top  + row * (h + self.rowMargin);
     
     attrs.frame = CGRectMake(x, y, w, h);
-    self.contentHeight = CGRectGetMaxY(attrs.frame);
+    if (indexPath.item == [self.collectionView.dataSource collectionView:self.collectionView numberOfItemsInSection:0] - 1) {
+        self.contentHeight = CGRectGetMaxY(attrs.frame);
+    }
+    
     return attrs;
 }
 

@@ -19,6 +19,6 @@
 
 @property (retain ,nonatomic)  NSTimer *timer;
 
-@property (retain ,nonatomic)  UILabel *label;
+@property (retain ,nonatomic)  UIButton *label;
 @end
 

@@ -77,19 +77,21 @@
     home.view.backgroundColor = [UIColor whiteColor];
     [self setUpOneChildViewController:home image:[UIImage imageNamed:@"dictionary"] selectedImage:[UIImage imageWithOriginalName:@"dictionary_selected"] title:@"辞典"];
     
-    
+    CollectWordsViewController *collectWordsViewController = [CollectWordsViewController new];
+    [self setUpOneChildViewController:collectWordsViewController image:[UIImage imageWithOriginalName:@"collectWords"] selectedImage:[UIImage imageWithOriginalName:@"collectWords_selected"] title:@"集字"];
     
     // 必备
     EssentialController *essential = [[EssentialController alloc] init];
     [self setUpOneChildViewController:essential image:[UIImage imageNamed:@"essential"] selectedImage:[UIImage imageWithOriginalName:@"essential_selected"] title:@"必备"];
     
     
-    // 篆刻
-//    CuttingController *cutting = [[CuttingController alloc] init];
-//    [self setUpOneChildViewController:cutting image:[UIImage imageNamed:@"cutting"] selectedImage:[UIImage imageWithOriginalName:@"cutting_selected"] title:@"篆刻"];
-    CollectWordsViewController *collectWordsViewController = [CollectWordsViewController new];
-    [self setUpOneChildViewController:collectWordsViewController image:[UIImage imageWithOriginalName:@"cutting"] selectedImage:[UIImage imageWithOriginalName:@"cutting_selected"] title:@"集字"];
+
     
+    
+    
+    // 篆刻
+        CuttingController *cutting = [[CuttingController alloc] init];
+        [self setUpOneChildViewController:cutting image:[UIImage imageNamed:@"cutting"] selectedImage:[UIImage imageWithOriginalName:@"cutting_selected"] title:@"篆刻"];
     
     // 社区
     CommunityController *community = [[CommunityController alloc] init];

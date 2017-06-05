@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageLabelCollectionViewCell" id="gTV-IL-0wX" customClass="ImageLabelCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHz-mT-zO6">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bHz-mT-zO6" secondAttribute="height" multiplier="1:1" id="MUE-cb-Ai4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王逸之" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0N-x6-IoP">
+                        <rect key="frame" x="37" y="129" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="z0N-x6-IoP" secondAttribute="bottom" constant="6" id="1Zs-mg-C7d"/>
+                <constraint firstItem="bHz-mT-zO6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Erw-vP-mw6"/>
+                <constraint firstAttribute="trailing" secondItem="bHz-mT-zO6" secondAttribute="trailing" id="eaf-3g-wz5"/>
+                <constraint firstItem="bHz-mT-zO6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mYF-nH-rDQ"/>
+                <constraint firstItem="z0N-x6-IoP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="stq-w6-JTL"/>
+            </constraints>
+            <size key="customSize" width="134" height="153"/>
+            <connections>
+                <outlet property="iconImageView" destination="bHz-mT-zO6" id="3Qq-4w-V6H"/>
+                <outlet property="nameLabel" destination="z0N-x6-IoP" id="Sr4-Um-EjZ"/>
+            </connections>
+            <point key="canvasLocation" x="-15" y="144.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

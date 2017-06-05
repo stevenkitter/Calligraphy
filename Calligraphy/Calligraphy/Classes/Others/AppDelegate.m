@@ -40,12 +40,15 @@
     
     //可以在customSplashView上显示包含icon的自定义开屏
     self.customSplashView = [[UIImageView alloc]initWithFrame:self.window.frame];
+    UIView *splashContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CLScreenW, CLScreenH - 100)];
+    [self.customSplashView addSubview:splashContainer];
+    
     _customSplashView.userInteractionEnabled = YES;
-    [self.customSplashView setImage:[UIImage imageNamed:@"luanch.png"]];
+    [self.customSplashView setImage:[UIImage imageNamed:@"showImage"]];
     
     [self.window addSubview:self.customSplashView];
     
-    [splash loadAndDisplayUsingContainerView:self.customSplashView];
+    [splash loadAndDisplayUsingContainerView:splashContainer];
     
     //[self.customSplashView setHidden:YES];
     
@@ -55,27 +58,38 @@
 -(void)timerFireMethod:(NSTimer*)timer
 {
     _secondCount--;
-    [self.label setText:[NSString stringWithFormat:@"%ld",(long)_secondCount]];
+    [self.label setTitle:[NSString stringWithFormat:@"跳过(%ld)",(long)_secondCount] forState:UIControlStateNormal];
+//    [self.label setText:];
 }
 
 - (NSString *)publisherId{
     return @"ad761935"; //your_own_app_id
 }
 
+-(void)removeAd:(UIButton*)btn {
+    [self.customSplashView removeFromSuperview];
+}
+
 -(void)splashSuccessPresentScreen:(BaiduMobAdSplash *)splash
 {
     
     
-    CGFloat labelW = 33;
+    CGFloat labelW = 80;
     CGFloat labelH = 33;
     CGFloat margin = 20;
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CLScreenW-margin-labelW, margin, labelW, labelH)];
+    UIButton *label = [[UIButton alloc] initWithFrame:CGRectMake(CLScreenW-margin-labelW, margin, labelW, labelH)];
+    label.backgroundColor = [UIColor colorWithRed:70.0/255 green:70.0/255 blue:70.0/255 alpha:0.3];
+    label.layer.cornerRadius = 5;
+    label.layer.masksToBounds = YES;
+    label.layer.borderColor = [UIColor whiteColor].CGColor;
+    label.layer.borderWidth = 1;
     self.label = label;
-    label.text = @"5";
-    label.textAlignment = NSTextAlignmentCenter;
-    label.backgroundColor = [UIColor grayColor];
+    [label addTarget:self action:@selector(removeAd:) forControlEvents:UIControlEventTouchUpInside];
+    [label setTitle:@"跳过(5)" forState:UIControlStateNormal];
+    label.titleLabel.textAlignment = NSTextAlignmentCenter;
+//    label.backgroundColor = [UIColor clearColor];
     _secondCount = 5;
-    label.textColor = [UIColor whiteColor];
+    [label setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.customSplashView addSubview:label];
     [self.customSplashView bringSubviewToFront:label];
     
@@ -89,7 +103,7 @@
  */
 - (void)splashlFailPresentScreen:(BaiduMobAdSplash *)splash withError:(BaiduMobFailReason) reason
 {
-    
+    [self.timer invalidate];
     //自定义开屏移除
     [self.customSplashView removeFromSuperview];
 }
@@ -99,7 +113,7 @@
  */
 - (void)splashDidDismissScreen:(BaiduMobAdSplash *)splash
 {
-    
+    [self.timer invalidate];
     //自定义开屏移除
     [self.customSplashView removeFromSuperview];
 }
