@@ -101,7 +101,7 @@
             webViewC.url = @"http://syh.shibeixuan.com";
             break;
         case 2:
-            webViewC.url = @"http://www.shibeixuan.com/bibei/zg.html";
+            webViewC.url = @"http://zl.shibeixuan.com";
             break;
         default:
             break;

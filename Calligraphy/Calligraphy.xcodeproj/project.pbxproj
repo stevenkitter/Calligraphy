@@ -29,6 +29,12 @@
 		1853EED21EDFE35B0086391D /* CollectWordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853EED11EDFE35B0086391D /* CollectWordModel.m */; };
 		1853EED61EE0021D0086391D /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853EED41EE0021D0086391D /* ImageCollectionViewCell.m */; };
 		1853EED71EE0021D0086391D /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853EED51EE0021D0086391D /* ImageCollectionViewCell.xib */; };
+		185AC3891EE63BF200063AFC /* backItemImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185AC37E1EE63BF200063AFC /* backItemImage@2x.png */; };
+		185AC38A1EE63BF200063AFC /* backItemImage_hl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185AC37F1EE63BF200063AFC /* backItemImage_hl@2x.png */; };
+		185AC38B1EE63BF200063AFC /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AC3821EE63BF200063AFC /* NJKWebViewProgress.m */; };
+		185AC38C1EE63BF200063AFC /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AC3841EE63BF200063AFC /* NJKWebViewProgressView.m */; };
+		185AC38D1EE63BF200063AFC /* RxWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AC3861EE63BF200063AFC /* RxWebViewController.m */; };
+		185AC38E1EE63BF200063AFC /* RxWebViewNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AC3881EE63BF200063AFC /* RxWebViewNavigationViewController.m */; };
 		18C49C221EDECB3C009DB680 /* CollectWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C49C201EDECB3C009DB680 /* CollectWordsViewController.m */; };
 		18C49C231EDECB3C009DB680 /* CollectWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C49C211EDECB3C009DB680 /* CollectWordsViewController.xib */; };
 		9711277A1C2D104700889655 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971127791C2D104700889655 /* WebViewController.m */; };
@@ -129,6 +135,16 @@
 		1853EED31EE0021D0086391D /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
 		1853EED41EE0021D0086391D /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
 		1853EED51EE0021D0086391D /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		185AC37E1EE63BF200063AFC /* backItemImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backItemImage@2x.png"; sourceTree = "<group>"; };
+		185AC37F1EE63BF200063AFC /* backItemImage_hl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backItemImage_hl@2x.png"; sourceTree = "<group>"; };
+		185AC3811EE63BF200063AFC /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		185AC3821EE63BF200063AFC /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		185AC3831EE63BF200063AFC /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		185AC3841EE63BF200063AFC /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
+		185AC3851EE63BF200063AFC /* RxWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxWebViewController.h; sourceTree = "<group>"; };
+		185AC3861EE63BF200063AFC /* RxWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RxWebViewController.m; sourceTree = "<group>"; };
+		185AC3871EE63BF200063AFC /* RxWebViewNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxWebViewNavigationViewController.h; sourceTree = "<group>"; };
+		185AC3881EE63BF200063AFC /* RxWebViewNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RxWebViewNavigationViewController.m; sourceTree = "<group>"; };
 		18C49C1F1EDECB3C009DB680 /* CollectWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectWordsViewController.h; sourceTree = "<group>"; };
 		18C49C201EDECB3C009DB680 /* CollectWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectWordsViewController.m; sourceTree = "<group>"; };
 		18C49C211EDECB3C009DB680 /* CollectWordsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectWordsViewController.xib; sourceTree = "<group>"; };
@@ -387,6 +403,31 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		185AC37D1EE63BF200063AFC /* RxWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				185AC37E1EE63BF200063AFC /* backItemImage@2x.png */,
+				185AC37F1EE63BF200063AFC /* backItemImage_hl@2x.png */,
+				185AC3801EE63BF200063AFC /* NJKWebViewProgress */,
+				185AC3851EE63BF200063AFC /* RxWebViewController.h */,
+				185AC3861EE63BF200063AFC /* RxWebViewController.m */,
+				185AC3871EE63BF200063AFC /* RxWebViewNavigationViewController.h */,
+				185AC3881EE63BF200063AFC /* RxWebViewNavigationViewController.m */,
+			);
+			path = RxWebViewController;
+			sourceTree = "<group>";
+		};
+		185AC3801EE63BF200063AFC /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				185AC3811EE63BF200063AFC /* NJKWebViewProgress.h */,
+				185AC3821EE63BF200063AFC /* NJKWebViewProgress.m */,
+				185AC3831EE63BF200063AFC /* NJKWebViewProgressView.h */,
+				185AC3841EE63BF200063AFC /* NJKWebViewProgressView.m */,
+			);
+			path = NJKWebViewProgress;
+			sourceTree = "<group>";
+		};
 		18C49C1B1EDECAFF009DB680 /* CollectWords */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,6 +662,7 @@
 		97EBFDBA1C2A28430074FE59 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				185AC37D1EE63BF200063AFC /* RxWebViewController */,
 				97EBFDBB1C2A28AC0074FE59 /* CLHttpTool.h */,
 				97EBFDBC1C2A28AC0074FE59 /* CLHttpTool.m */,
 				97EBFDCD1C2A93080074FE59 /* PreimageView.h */,
@@ -729,7 +771,9 @@
 				181D37921C26E7B400C110E3 /* LaunchScreen.xib in Resources */,
 				18C49C231EDECB3C009DB680 /* CollectWordsViewController.xib in Resources */,
 				181D378F1C26E7B400C110E3 /* Images.xcassets in Resources */,
+				185AC3891EE63BF200063AFC /* backItemImage@2x.png in Resources */,
 				97EBFDB61C2948FD0074FE59 /* SearchResultCell.xib in Resources */,
+				185AC38A1EE63BF200063AFC /* backItemImage_hl@2x.png in Resources */,
 				EC6D3F981EAF42F8009E403E /* baidumobadsdk.bundle in Resources */,
 				182BD9641EE103DF00E30FB1 /* SelectImageView.xib in Resources */,
 				EC6D3FA31EAF455E009E403E /* luanch.png in Resources */,
@@ -800,6 +844,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185AC38B1EE63BF200063AFC /* NJKWebViewProgress.m in Sources */,
 				1853EED21EDFE35B0086391D /* CollectWordModel.m in Sources */,
 				97EBFD951C279C070074FE59 /* DictionaryController.m in Sources */,
 				181D37AD1C26E89F00C110E3 /* AppDelegate.m in Sources */,
@@ -822,10 +867,13 @@
 				97EBFD9C1C27E1120074FE59 /* FunctionView.m in Sources */,
 				181D37B91C26E9BC00C110E3 /* TabBarController.m in Sources */,
 				181D37AF1C26E89F00C110E3 /* main.m in Sources */,
+				185AC38D1EE63BF200063AFC /* RxWebViewController.m in Sources */,
 				181D37C01C26EA0A00C110E3 /* BadgeView.m in Sources */,
 				181D37C21C26EA0A00C110E3 /* TabBarView.m in Sources */,
+				185AC38C1EE63BF200063AFC /* NJKWebViewProgressView.m in Sources */,
 				181D37C11C26EA0A00C110E3 /* TabBarButton.m in Sources */,
 				1853EED61EE0021D0086391D /* ImageCollectionViewCell.m in Sources */,
+				185AC38E1EE63BF200063AFC /* RxWebViewNavigationViewController.m in Sources */,
 				9711277A1C2D104700889655 /* WebViewController.m in Sources */,
 				97EBFDB51C2948FD0074FE59 /* SearchResultCell.m in Sources */,
 				97EBFDBD1C2A28AC0074FE59 /* CLHttpTool.m in Sources */,
