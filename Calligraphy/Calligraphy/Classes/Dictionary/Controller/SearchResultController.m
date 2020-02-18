@@ -20,6 +20,7 @@
 #import "BaiduMobAdSDK/BaiduMobAdView.h"
 #import "BaiduMobAdSDK/BaiduMobAdSetting.h"
 static NSInteger pageSize = 10;
+static int VHeight = 290;
 @interface SearchResultController ()<FunctionViewDelegate,UIActionSheetDelegate,BaiduMobAdViewDelegate>
 @property (strong ,nonatomic)  FunctionView *funcView;
 
@@ -119,10 +120,10 @@ static NSInteger pageSize = 10;
 -(void)addHeader
 {
     UIView *superView = [UIView new];
-    superView.frame = CGRectMake(0, 0, CLScreenW, 250+CLScreenW*0.15);
+    superView.frame = CGRectMake(0, 0, CLScreenW, VHeight+CLScreenW*0.15);
     _superView = superView;
     
-    FunctionView *funcView = [[FunctionView alloc] initWithFrame:CGRectMake(0, CLScreenW*0.15, CLScreenW, 250)];
+    FunctionView *funcView = [[FunctionView alloc] initWithFrame:CGRectMake(0, CLScreenW*0.15, CLScreenW, VHeight)];
     
     self.funcView = funcView;
     funcView.inputText.text = _keyword;
@@ -141,22 +142,29 @@ static NSInteger pageSize = 10;
     [superView addSubview:_sharedAdView];
     
     [_sharedAdView	start];
-    
+    [funcView setType: self.type];
+    if (self.type == 0) {
+        funcView.checkBtn0.selected = true;
+        funcView.checkBtn1.selected = false;
+    } else {
+        funcView.checkBtn0.selected = false;
+        funcView.checkBtn1.selected = true;
+    }
     self.tableView.tableHeaderView = superView;
 }
 
 
 - (void)failedDisplayAd:(BaiduMobFailReason)reason{
     [_sharedAdView removeFromSuperview];
-    _superView.frame = CGRectMake(0, 0, CLScreenW, 250);
-    _funcView.frame = CGRectMake(0, 0, CLScreenW, 250);
+    _superView.frame = CGRectMake(0, 0, CLScreenW, VHeight);
+    _funcView.frame = CGRectMake(0, 0, CLScreenW, VHeight);
     [self.tableView reloadData];
 }
 
 - (void)didAdImpressed{
     [_superView addSubview:_sharedAdView];
-    _superView.frame = CGRectMake(0, 0, CLScreenW, 250+CLScreenW*0.15);
-    _funcView.frame = CGRectMake(0, CLScreenW*0.15, CLScreenW, 250);
+    _superView.frame = CGRectMake(0, 0, CLScreenW, VHeight+CLScreenW*0.15);
+    _funcView.frame = CGRectMake(0, CLScreenW*0.15, CLScreenW, VHeight);
     [self.tableView reloadData];
 }
 
@@ -169,12 +177,14 @@ static NSInteger pageSize = 10;
     [hud setLabelText:@"加载中..."];
     [self.view addSubview:hud];
     [hud show:YES];
-    NSString *url = [NSString stringWithFormat:@"http://www.shibeixuan.com/xzqy3/mo_cidian2.php?find=find&page=%@&pageend=%ld",pageIndex,(long)pageSize];
+    NSString *url = [NSString stringWithFormat:@"http://www.shibeixuan.com/xzqy3/mo_cidian2.php?find=find&page=%@&pageend=%ld&types=%ld",pageIndex,(long)pageSize,(long)self.funcView.type + 1];
     NSDictionary *paramters = @{@"gjz":_funcView.inputText.text,@"fenlei":@(_style)};
     
     [CLHttpTool post:url parameters:paramters success:^(id responseObject) {
         [hud hide:YES];
         [hud removeFromSuperview];
+        
+        
         
         if ([pageIndex intValue] == 0)
         {
@@ -198,6 +208,8 @@ static NSInteger pageSize = 10;
         [window makeToast:@"没有更多内容了"
                  duration:1.0
                  position:CSToastPositionCenter];
+        [self.dataSource removeAllObjects];
+        [self.tableView reloadData];
     }];
     
 }

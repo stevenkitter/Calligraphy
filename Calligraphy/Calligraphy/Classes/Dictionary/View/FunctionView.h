@@ -24,6 +24,10 @@
 @property (strong ,nonatomic)  UIButton *style;
 //input
 @property (strong ,nonatomic)  UITextField *inputText;
+//历代名家🔘
+@property (strong ,nonatomic)  UIButton *checkBtn0;
+//当代书家🔘
+@property (strong ,nonatomic)  UIButton *checkBtn1;
 //btnAction查询
 @property (strong ,nonatomic)  UIButton *inquiry;
 
@@ -31,4 +35,6 @@
 @property (assign ,nonatomic)  CGFloat CellHeight;
 //代理
 @property (nonatomic, weak) id<FunctionViewDelegate> delegate;
+
+@property (nonatomic, assign) NSInteger type;
 @end

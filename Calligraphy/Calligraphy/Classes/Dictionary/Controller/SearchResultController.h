@@ -15,4 +15,6 @@
 //关键字
 @property (copy ,nonatomic)  NSString *keyword;
 
+//
+@property (nonatomic, assign) NSInteger type;
 @end

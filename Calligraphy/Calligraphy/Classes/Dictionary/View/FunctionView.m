@@ -71,6 +71,42 @@
     return _inquiry;
 }
 
+-(UIButton *)checkBtn0
+{
+    if (_checkBtn0 == nil) {
+        _checkBtn0 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:_checkBtn0];
+        _checkBtn0.layer.borderWidth = 0.0f;
+        _checkBtn0.tag = 0;
+        _checkBtn0.layer.cornerRadius = CLCornerRadius;
+        _checkBtn0.layer.masksToBounds = YES;
+        _checkBtn0.titleLabel.font = [UIFont systemFontOfSize:14];
+        [_checkBtn0 setImage:[UIImage imageNamed:@"check_box_outline"] forState:UIControlStateNormal];
+        [_checkBtn0 setImage:[UIImage imageNamed:@"check_box_rounded"] forState:UIControlStateSelected];
+        _checkBtn0.selected = true;
+        
+        [_checkBtn0 addTarget:self action:@selector(checkClicked:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _checkBtn0;
+}
+
+-(UIButton *)checkBtn1
+{
+    if (_checkBtn1 == nil) {
+        _checkBtn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:_checkBtn1];
+        _checkBtn1.layer.borderWidth = 0.0f;
+        _checkBtn1.tag = 1;
+        _checkBtn1.layer.cornerRadius = CLCornerRadius;
+        _checkBtn1.layer.masksToBounds = YES;
+        [_checkBtn1 setImage:[UIImage imageNamed:@"check_box_outline"] forState:UIControlStateNormal];
+        [_checkBtn1 setImage:[UIImage imageNamed:@"check_box_rounded"] forState:UIControlStateSelected];
+        _checkBtn1.titleLabel.font = [UIFont systemFontOfSize:14];
+        [_checkBtn1 addTarget:self action:@selector(checkClicked:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _checkBtn1;
+}
+
 
 -(instancetype)initWithFrame:(CGRect)frame
 {
@@ -80,7 +116,7 @@
 
         [self setSubViewsContent];
         [self setSubViewsFrame];
-     
+    
     }
     return self;
 }
@@ -100,7 +136,12 @@
     
     _inputText.frame = (CGRect){{CGRectGetMinX(_style.frame), CGRectGetMaxY(_style.frame)+CLMargin}, _style.frame.size};
     
-    _inquiry.frame = (CGRect){{CGRectGetMinX(_style.frame), CGRectGetMaxY(_inputText.frame)+CLMargin}, _inputText.frame.size};
+    CGSize checkBtnSize = CGSizeMake( (btnW - CLMargin) * 0.5, 30);
+    
+    _checkBtn0.frame = (CGRect){{CGRectGetMinX(_style.frame), CGRectGetMaxY(_inputText.frame)+CLMargin}, checkBtnSize};
+    _checkBtn1.frame = (CGRect){{CGRectGetMaxX(_checkBtn0.frame) + CLMargin, CGRectGetMaxY(_inputText.frame)+CLMargin}, checkBtnSize};
+    
+    _inquiry.frame = (CGRect){{CGRectGetMinX(_checkBtn0.frame), CGRectGetMaxY(_checkBtn1.frame)+CLMargin}, _inputText.frame.size};
     
     self.height = CGRectGetMaxY(_inquiry.frame);
 }
@@ -114,10 +155,27 @@
     [_style setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
     [self.inputText setPlaceholder:@"请输入您要查询的汉字"];
-    
+    [self.checkBtn0 setTitle:@"历代名家" forState:UIControlStateNormal];
+    [self.checkBtn1 setTitle:@"当代书家" forState:UIControlStateNormal];
     [self.inquiry setTitle:@"查字典" forState:UIControlStateNormal];
     [_inquiry setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [_checkBtn0 setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [_checkBtn1 setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
 }
+
+-(void)checkClicked:(UIButton*)btn {
+    btn.selected = true;
+    self.type = btn.tag;
+    // 点击左边的
+    if (btn.tag == 0) {
+        self.checkBtn1.selected = false;
+    
+    } else {
+        self.checkBtn0.selected = false;
+    }
+}
+
+
 
 -(void)btnClicked:(UIButton *)btn
 {

@@ -132,6 +132,7 @@
     SearchResultController *searchResultController = [[SearchResultController alloc] init];
     searchResultController.style = _styleIndex+1;
     searchResultController.keyword = _funcView.inputText.text;
+    searchResultController.type = _funcView.type;
     searchResultController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:searchResultController animated:YES];
   

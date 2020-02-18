@@ -37,6 +37,8 @@
 		185AC38E1EE63BF200063AFC /* RxWebViewNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AC3881EE63BF200063AFC /* RxWebViewNavigationViewController.m */; };
 		18C49C221EDECB3C009DB680 /* CollectWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C49C201EDECB3C009DB680 /* CollectWordsViewController.m */; };
 		18C49C231EDECB3C009DB680 /* CollectWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C49C211EDECB3C009DB680 /* CollectWordsViewController.xib */; };
+		848C295923FBDAE1000B91F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C295723FBDAE0000B91F8 /* Default-568h@2x.png */; };
+		848C295A23FBDAE1000B91F8 /* luanch1.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C295823FBDAE1000B91F8 /* luanch1.png */; };
 		9711277A1C2D104700889655 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971127791C2D104700889655 /* WebViewController.m */; };
 		9767F3AD1C2B8B2700AB6874 /* EssentialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767F3AC1C2B8B2700AB6874 /* EssentialController.m */; };
 		9767F3B01C2B8B5800AB6874 /* CuttingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767F3AF1C2B8B5800AB6874 /* CuttingController.m */; };
@@ -57,7 +59,6 @@
 		97C7DFF11C3B8443005418DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C7DFF01C3B8443005418DA /* Foundation.framework */; };
 		97C7DFF31C3B844C005418DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C7DFF21C3B844C005418DA /* CoreGraphics.framework */; };
 		97C7DFF51C3B8457005418DA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C7DFF41C3B8457005418DA /* WebKit.framework */; };
-		97DFE1EB1C730F060026EE85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DFE1E81C730F060026EE85 /* Default-568h@2x.png */; };
 		97EBFD8D1C2788D30074FE59 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EBFD8B1C2788D30074FE59 /* libAFNetworking.a */; };
 		97EBFD8E1C2788D30074FE59 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EBFD8C1C2788D30074FE59 /* libSDWebImage.a */; };
 		97EBFD951C279C070074FE59 /* DictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EBFD941C279C070074FE59 /* DictionaryController.m */; };
@@ -80,7 +81,6 @@
 		EC6D3F9B1EAF434A009E403E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6D3F9A1EAF434A009E403E /* CoreMedia.framework */; };
 		EC6D3F9D1EAF4350009E403E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6D3F9C1EAF4350009E403E /* libc++.tbd */; };
 		EC6D3F9F1EAF4355009E403E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6D3F9E1EAF4355009E403E /* SafariServices.framework */; };
-		EC6D3FA31EAF455E009E403E /* luanch.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6D3FA21EAF455E009E403E /* luanch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +149,8 @@
 		18C49C201EDECB3C009DB680 /* CollectWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectWordsViewController.m; sourceTree = "<group>"; };
 		18C49C211EDECB3C009DB680 /* CollectWordsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectWordsViewController.xib; sourceTree = "<group>"; };
 		20C6FF5AA291C0E3E7DC971A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		848C295723FBDAE0000B91F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		848C295823FBDAE1000B91F8 /* luanch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = luanch1.png; path = ../../../../Downloads/luanch1.png; sourceTree = "<group>"; };
 		971127781C2D104700889655 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		971127791C2D104700889655 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		9767F3AB1C2B8B2700AB6874 /* EssentialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssentialController.h; sourceTree = "<group>"; };
@@ -173,7 +175,6 @@
 		97C7DFF01C3B8443005418DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		97C7DFF21C3B844C005418DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		97C7DFF41C3B8457005418DA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		97DFE1E81C730F060026EE85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		97EBFD8B1C2788D30074FE59 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
 		97EBFD8C1C2788D30074FE59 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
 		97EBFD931C279C070074FE59 /* DictionaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryController.h; sourceTree = "<group>"; };
@@ -209,7 +210,6 @@
 		EC6D3F9A1EAF434A009E403E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		EC6D3F9C1EAF4350009E403E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		EC6D3F9E1EAF4355009E403E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		EC6D3FA21EAF455E009E403E /* luanch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luanch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,9 +281,9 @@
 			children = (
 				181D37A71C26E89F00C110E3 /* Classes */,
 				181D378E1C26E7B400C110E3 /* Images.xcassets */,
+				848C295723FBDAE0000B91F8 /* Default-568h@2x.png */,
+				848C295823FBDAE1000B91F8 /* luanch1.png */,
 				181D37901C26E7B400C110E3 /* LaunchScreen.xib */,
-				97DFE1E81C730F060026EE85 /* Default-568h@2x.png */,
-				EC6D3FA21EAF455E009E403E /* luanch.png */,
 				181D37811C26E7B400C110E3 /* Supporting Files */,
 			);
 			path = Calligraphy;
@@ -748,6 +748,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -776,9 +777,9 @@
 				185AC38A1EE63BF200063AFC /* backItemImage_hl@2x.png in Resources */,
 				EC6D3F981EAF42F8009E403E /* baidumobadsdk.bundle in Resources */,
 				182BD9641EE103DF00E30FB1 /* SelectImageView.xib in Resources */,
-				EC6D3FA31EAF455E009E403E /* luanch.png in Resources */,
+				848C295A23FBDAE1000B91F8 /* luanch1.png in Resources */,
+				848C295923FBDAE1000B91F8 /* Default-568h@2x.png in Resources */,
 				1853EED71EE0021D0086391D /* ImageCollectionViewCell.xib in Resources */,
-				97DFE1EB1C730F060026EE85 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1000,7 +1001,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: yaochun zheng (5F55UWPDJH)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5F55UWPDJH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Calligraphy/Classes/Baidu_Ad",
@@ -1046,7 +1047,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: yaochun zheng (5F55UWPDJH)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5F55UWPDJH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Calligraphy/Classes/Baidu_Ad",
