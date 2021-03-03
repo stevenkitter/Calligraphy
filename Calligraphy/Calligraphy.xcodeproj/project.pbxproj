@@ -37,8 +37,20 @@
 		185AC38E1EE63BF200063AFC /* RxWebViewNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AC3881EE63BF200063AFC /* RxWebViewNavigationViewController.m */; };
 		18C49C221EDECB3C009DB680 /* CollectWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C49C201EDECB3C009DB680 /* CollectWordsViewController.m */; };
 		18C49C231EDECB3C009DB680 /* CollectWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C49C211EDECB3C009DB680 /* CollectWordsViewController.xib */; };
+		7883A2E925EFC1DC004E4749 /* Sigmob.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7883A2E225EFC1D9004E4749 /* Sigmob.bundle */; };
+		7883A2EA25EFC1DC004E4749 /* BUAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7883A2E325EFC1D9004E4749 /* BUAdSDK.bundle */; };
+		7883A2EB25EFC1DC004E4749 /* HXSDKADGDT.10.4.3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A2E425EFC1DB004E4749 /* HXSDKADGDT.10.4.3.framework */; };
+		7883A2EC25EFC1DC004E4749 /* HXSDKADSigmob.10.4.3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A2E525EFC1DB004E4749 /* HXSDKADSigmob.10.4.3.framework */; };
+		7883A2ED25EFC1DC004E4749 /* HXSDK.10.4.3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A2E625EFC1DB004E4749 /* HXSDK.10.4.3.framework */; };
+		7883A2EE25EFC1DC004E4749 /* HXSDKADBytedance.10.4.3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A2E725EFC1DC004E4749 /* HXSDKADBytedance.10.4.3.framework */; };
+		7883A2EF25EFC1DC004E4749 /* HXDSDKGDT.10.4.3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A2E825EFC1DC004E4749 /* HXDSDKGDT.10.4.3.framework */; };
+		7883A2F325EFC25A004E4749 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A2F225EFC25A004E4749 /* libresolv.9.tbd */; };
+		7883A2F725EFC26D004E4749 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A2F625EFC26D004E4749 /* libz.tbd */; };
+		7883A2FB25EFC27A004E4749 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A2FA25EFC27A004E4749 /* libxml2.tbd */; };
+		7883A2FF25EFC288004E4749 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A2FE25EFC288004E4749 /* libsqlite3.tbd */; };
+		7883A30325EFC294004E4749 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A30225EFC294004E4749 /* libbz2.tbd */; };
+		7883A30725EFC2A1004E4749 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883A30625EFC2A1004E4749 /* libiconv.tbd */; };
 		848C295923FBDAE1000B91F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C295723FBDAE0000B91F8 /* Default-568h@2x.png */; };
-		848C295A23FBDAE1000B91F8 /* luanch1.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C295823FBDAE1000B91F8 /* luanch1.png */; };
 		9711277A1C2D104700889655 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971127791C2D104700889655 /* WebViewController.m */; };
 		9767F3AD1C2B8B2700AB6874 /* EssentialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767F3AC1C2B8B2700AB6874 /* EssentialController.m */; };
 		9767F3B01C2B8B5800AB6874 /* CuttingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767F3AF1C2B8B5800AB6874 /* CuttingController.m */; };
@@ -149,8 +161,20 @@
 		18C49C201EDECB3C009DB680 /* CollectWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectWordsViewController.m; sourceTree = "<group>"; };
 		18C49C211EDECB3C009DB680 /* CollectWordsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectWordsViewController.xib; sourceTree = "<group>"; };
 		20C6FF5AA291C0E3E7DC971A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7883A2E225EFC1D9004E4749 /* Sigmob.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Sigmob.bundle; sourceTree = "<group>"; };
+		7883A2E325EFC1D9004E4749 /* BUAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BUAdSDK.bundle; sourceTree = "<group>"; };
+		7883A2E425EFC1DB004E4749 /* HXSDKADGDT.10.4.3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HXSDKADGDT.10.4.3.framework; sourceTree = "<group>"; };
+		7883A2E525EFC1DB004E4749 /* HXSDKADSigmob.10.4.3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HXSDKADSigmob.10.4.3.framework; sourceTree = "<group>"; };
+		7883A2E625EFC1DB004E4749 /* HXSDK.10.4.3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HXSDK.10.4.3.framework; sourceTree = "<group>"; };
+		7883A2E725EFC1DC004E4749 /* HXSDKADBytedance.10.4.3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HXSDKADBytedance.10.4.3.framework; sourceTree = "<group>"; };
+		7883A2E825EFC1DC004E4749 /* HXDSDKGDT.10.4.3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HXDSDKGDT.10.4.3.framework; sourceTree = "<group>"; };
+		7883A2F225EFC25A004E4749 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		7883A2F625EFC26D004E4749 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7883A2FA25EFC27A004E4749 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		7883A2FE25EFC288004E4749 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7883A30225EFC294004E4749 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		7883A30625EFC2A1004E4749 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		848C295723FBDAE0000B91F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		848C295823FBDAE1000B91F8 /* luanch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = luanch1.png; path = ../../../../Downloads/luanch1.png; sourceTree = "<group>"; };
 		971127781C2D104700889655 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		971127791C2D104700889655 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		9767F3AB1C2B8B2700AB6874 /* EssentialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssentialController.h; sourceTree = "<group>"; };
@@ -217,7 +241,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7883A30725EFC2A1004E4749 /* libiconv.tbd in Frameworks */,
+				7883A30325EFC294004E4749 /* libbz2.tbd in Frameworks */,
+				7883A2FF25EFC288004E4749 /* libsqlite3.tbd in Frameworks */,
+				7883A2FB25EFC27A004E4749 /* libxml2.tbd in Frameworks */,
+				7883A2F725EFC26D004E4749 /* libz.tbd in Frameworks */,
+				7883A2F325EFC25A004E4749 /* libresolv.9.tbd in Frameworks */,
 				EC6D3F9F1EAF4355009E403E /* SafariServices.framework in Frameworks */,
+				7883A2EE25EFC1DC004E4749 /* HXSDKADBytedance.10.4.3.framework in Frameworks */,
 				EC6D3F9D1EAF4350009E403E /* libc++.tbd in Frameworks */,
 				EC6D3F9B1EAF434A009E403E /* CoreMedia.framework in Frameworks */,
 				97C7DFF51C3B8457005418DA /* WebKit.framework in Frameworks */,
@@ -229,17 +260,21 @@
 				97C7DFE91C3B8422005418DA /* CoreLocation.framework in Frameworks */,
 				97C7DFE71C3B8418005418DA /* MessageUI.framework in Frameworks */,
 				97C7DFE51C3B8411005418DA /* AVFoundation.framework in Frameworks */,
+				7883A2ED25EFC1DC004E4749 /* HXSDK.10.4.3.framework in Frameworks */,
 				97C7DFE31C3B8406005418DA /* MediaPlayer.framework in Frameworks */,
 				97C7DFE11C3B83F8005418DA /* CoreMotion.framework in Frameworks */,
 				97C7DFDF1C3B83EC005418DA /* AudioToolbox.framework in Frameworks */,
 				97C7DFDD1C3B83CB005418DA /* StoreKit.framework in Frameworks */,
 				97C7DFDB1C3B83C4005418DA /* AdSupport.framework in Frameworks */,
 				97C7DFD91C3B83BD005418DA /* Security.framework in Frameworks */,
+				7883A2EB25EFC1DC004E4749 /* HXSDKADGDT.10.4.3.framework in Frameworks */,
 				EC6D3F991EAF42F8009E403E /* BaiduMobAdSDK.framework in Frameworks */,
 				97C7DFD71C3B83B4005418DA /* QuartzCore.framework in Frameworks */,
+				7883A2EF25EFC1DC004E4749 /* HXDSDKGDT.10.4.3.framework in Frameworks */,
 				97EBFDCC1C2A8C300074FE59 /* libMBProgressHUD.a in Frameworks */,
 				97EBFDCA1C2A87550074FE59 /* libMJRefresh.a in Frameworks */,
 				97EBFDC61C2A43990074FE59 /* libToast.a in Frameworks */,
+				7883A2EC25EFC1DC004E4749 /* HXSDKADSigmob.10.4.3.framework in Frameworks */,
 				97EBFD8D1C2788D30074FE59 /* libAFNetworking.a in Frameworks */,
 				97EBFD8E1C2788D30074FE59 /* libSDWebImage.a in Frameworks */,
 				A003D06FC1C78A95364F3B17 /* libPods.a in Frameworks */,
@@ -282,7 +317,6 @@
 				181D37A71C26E89F00C110E3 /* Classes */,
 				181D378E1C26E7B400C110E3 /* Images.xcassets */,
 				848C295723FBDAE0000B91F8 /* Default-568h@2x.png */,
-				848C295823FBDAE1000B91F8 /* luanch1.png */,
 				181D37901C26E7B400C110E3 /* LaunchScreen.xib */,
 				181D37811C26E7B400C110E3 /* Supporting Files */,
 			);
@@ -316,6 +350,7 @@
 		181D37A71C26E89F00C110E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7883A2E125EFC1C2004E4749 /* Ad */,
 				EC6D3F941EAF42F8009E403E /* Baidu_Ad */,
 				9767F3B11C2B8E5600AB6874 /* Community */,
 				9767F39E1C2B870400AB6874 /* Cutting */,
@@ -478,6 +513,12 @@
 		5A301B033CCE908C61E9F59C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7883A30625EFC2A1004E4749 /* libiconv.tbd */,
+				7883A30225EFC294004E4749 /* libbz2.tbd */,
+				7883A2FE25EFC288004E4749 /* libsqlite3.tbd */,
+				7883A2FA25EFC27A004E4749 /* libxml2.tbd */,
+				7883A2F625EFC26D004E4749 /* libz.tbd */,
+				7883A2F225EFC25A004E4749 /* libresolv.9.tbd */,
 				EC6D3F9E1EAF4355009E403E /* SafariServices.framework */,
 				EC6D3F9C1EAF4350009E403E /* libc++.tbd */,
 				EC6D3F9A1EAF434A009E403E /* CoreMedia.framework */,
@@ -507,6 +548,20 @@
 				20C6FF5AA291C0E3E7DC971A /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7883A2E125EFC1C2004E4749 /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				7883A2E325EFC1D9004E4749 /* BUAdSDK.bundle */,
+				7883A2E825EFC1DC004E4749 /* HXDSDKGDT.10.4.3.framework */,
+				7883A2E625EFC1DB004E4749 /* HXSDK.10.4.3.framework */,
+				7883A2E725EFC1DC004E4749 /* HXSDKADBytedance.10.4.3.framework */,
+				7883A2E425EFC1DB004E4749 /* HXSDKADGDT.10.4.3.framework */,
+				7883A2E525EFC1DB004E4749 /* HXSDKADSigmob.10.4.3.framework */,
+				7883A2E225EFC1D9004E4749 /* Sigmob.bundle */,
+			);
+			path = Ad;
 			sourceTree = "<group>";
 		};
 		85CE9E79581F145C5AE6B571 /* Pods */ = {
@@ -777,8 +832,9 @@
 				185AC38A1EE63BF200063AFC /* backItemImage_hl@2x.png in Resources */,
 				EC6D3F981EAF42F8009E403E /* baidumobadsdk.bundle in Resources */,
 				182BD9641EE103DF00E30FB1 /* SelectImageView.xib in Resources */,
-				848C295A23FBDAE1000B91F8 /* luanch1.png in Resources */,
+				7883A2EA25EFC1DC004E4749 /* BUAdSDK.bundle in Resources */,
 				848C295923FBDAE1000B91F8 /* Default-568h@2x.png in Resources */,
+				7883A2E925EFC1DC004E4749 /* Sigmob.bundle in Resources */,
 				1853EED71EE0021D0086391D /* ImageCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1005,6 +1061,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Calligraphy/Classes/Baidu_Ad",
+					"$(PROJECT_DIR)/Calligraphy/Classes/Ad",
 				);
 				GCC_PREFIX_HEADER = Calligraphy/Classes/Others/Calligraphy.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Calligraphy/Classes/Others/Info.plist";
@@ -1051,6 +1108,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Calligraphy/Classes/Baidu_Ad",
+					"$(PROJECT_DIR)/Calligraphy/Classes/Ad",
 				);
 				GCC_PREFIX_HEADER = Calligraphy/Classes/Others/Calligraphy.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Calligraphy/Classes/Others/Info.plist";
